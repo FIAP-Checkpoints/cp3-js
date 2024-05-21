@@ -1,4 +1,4 @@
-function meuEscopo () {
+function myFunction () {
     const form = document.querySelector('.form');
     const resultado = document.querySelector('.resultado');
 
@@ -6,7 +6,7 @@ function meuEscopo () {
 
     
 
-    function recebeEventoForm (e) {
+    function eventForm (e) {
         e.preventDefault();
         const inputNota1 = e.target.querySelector('.notas');
         const inputNota2 = e.target.querySelector('.notas2');
@@ -24,18 +24,20 @@ function meuEscopo () {
             const soma = nota1 + nota2;
             const media = soma / 2;
 
+
             const aprOrRep = () => {
-                const nivel = ['Reprovado', 'Recuperação', 'Aprovado'];
+                const nivel = ['Reprovado', 'de Recuperação', 'Aprovado'];
         
                 if (media <= 3) return nivel[0];
                 if (media <= 6) return nivel[1];
-                if (media > 6) return nivel[3];
+                if (media > 6) return nivel[2];
+
             }
 
             console.log(typeof soma);
-            console.log(nota1, nota2); // só usei para verificar tipos
+            console.log(nota1, nota2); // verify typeOf
             
-
+            resultado.innerHTML = ``; // clear input
             resultado.innerHTML += `<p>A nota do aluno foi ${inputNota1.value} e ${inputNota2.value}<br>A média delas foi ${media}</p> <br> E o Aluno está ${aprOrRep()}`;
         } else {
             resultado.innerHTML = `<p>Digite um número para a nota!</p>`;
@@ -44,10 +46,9 @@ function meuEscopo () {
               }, "2000");
 
         }
-
     }
     
-    form.addEventListener('submit', recebeEventoForm);
+    form.addEventListener('submit', eventForm);
 }
 
-meuEscopo();
+myFunction();

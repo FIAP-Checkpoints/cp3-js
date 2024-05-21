@@ -16,6 +16,7 @@ body {
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  margin-top: 20%;
 }
 
 .container {
@@ -60,4 +61,21 @@ form button:hover {
 h1 {
     text-align: center;
 }
+
+input {
+    border: none;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.notas, .notas2 {
+    border: 1px solid black;
+}
+
+#submit:hover {
+    cursor: pointer;
+    transition: .6s all ease-in-out;
+    box-shadow: 5px 10px 0px black;
+}
+
 
