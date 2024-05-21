@@ -26,7 +26,7 @@ function myFunction () {
 
 
             const aprOrRep = () => {
-                const nivel = ['Reprovado', 'Recuperação', 'Aprovado'];
+                const nivel = ['Reprovado', 'de Recuperação', 'Aprovado'];
         
                 if (media <= 3) return nivel[0];
                 if (media <= 6) return nivel[1];
