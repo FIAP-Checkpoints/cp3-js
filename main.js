@@ -29,7 +29,7 @@ function meuEscopo () {
         
                 if (media <= 3) return nivel[0];
                 if (media <= 6) return nivel[1];
-                if (media > 6) return nivel[3];
+                if (media > 6) return nivel[2];
             }
 
             console.log(typeof soma);
