@@ -1,3 +1,8 @@
+# Checkpoint 3 - FIAP
+
+`Foi utilizado: Objeto, Array, Function & TimeOut`
+
+```js
 function meuEscopo () {
     const form = document.querySelector('.form');
     const resultado = document.querySelector('.resultado');
@@ -51,3 +56,4 @@ function meuEscopo () {
 }
 
 meuEscopo();
+```
